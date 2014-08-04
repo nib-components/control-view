@@ -1,0 +1,14 @@
+{
+  "name": "control-view",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "nib-health-funds/tip": "*",
+    "nib-health-funds/control": "43d34709cb5a768cf08fd00b9c6d406cee21245d"
+  },
+  "development": {
+    "dependencies": {
+      "nib-components/shims": "*",
+      "nib-styles/control": "*"
+    }
+  }
+}
