@@ -2,7 +2,7 @@
   "name": "control-view",
   "scripts": ["index.js"],
   "dependencies": {
-    "nib-health-funds/tip": "0.1.0",
+    "nib-health-funds/tip": "0.1.1",
     "nib-health-funds/control": "0.1.11"
   },
   "development": {
