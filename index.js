@@ -6,25 +6,28 @@ var init = ControlView.prototype.init;
 ControlView.prototype.init = function() {
   init.call(this);
 
-  this.tip = new Tip();
-  this.tip
-    .prependTo(this.feedbackContainer || this.feedbackMessage)
-    .positionAt(document.querySelector('.js-feedback-icon'), 'bottom')
-  ;
+  this.feedbackTarget = this.el.querySelector('.js-feedback-icon');
+  if (this.feedbackTarget) {
+    this.tip = new Tip();
+    this.tip
+      .prependTo(this.feedbackContainer || this.feedbackMessage)
+      .positionAt(this.feedbackTarget, 'bottom')
+    ;
+  }
 
 };
 
 var showMessage = ControlView.prototype.showMessage;
 ControlView.prototype.showMessage = function() {
   showMessage.call(this);
-  this.tip.show();
+  if (this.feedbackTarget) this.tip.show();
   return this;
 };
 
 var hideMessage = ControlView.prototype.hideMessage;
 ControlView.prototype.hideMessage = function() {
   hideMessage.call(this);
-  this.tip.hide();
+  if (this.feedbackTarget) this.tip.hide();
   return this;
 };
 
