@@ -20,7 +20,9 @@ ControlView.prototype.init = function() {
 var showMessage = ControlView.prototype.showMessage;
 ControlView.prototype.showMessage = function() {
   showMessage.call(this);
-  if (this.feedbackTarget) this.tip.show();
+  if (this.feedbackTarget) {
+    this.tip.reposition().show();
+  }
   return this;
 };
 
