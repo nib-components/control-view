@@ -48,7 +48,6 @@ ControlView.prototype.isLoading = function() {
  * @returns {ControlView}
  */
 ControlView.prototype.setLoading = function(loading) {
-  console.log('loading');
   if (loading) {
     this.el.classList.add('is-loading');
   } else {
