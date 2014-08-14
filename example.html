@@ -10,17 +10,6 @@
             background-color: #ccc;
         }
 
-        .control-feedback-message {
-            position: static;
-        }
-
-        .tip--direction-up {
-            margin-top: 6px;
-            border-left-width: 6px;
-            border-right-width: 6px;
-            border-bottom: 6px solid red;
-        }
-
     </style>
 </head>
 <body>
@@ -37,6 +26,8 @@
             <p class="control-feedback-message__text js-feedback-message"></p>
         </div>
     </div>
+
+    <button onclick="nameControl.controlView.setLoading(!nameControl.controlView.isLoading());">Toggle Loading</button>
 
     <script src="build/build.js"></script>
     <script>
