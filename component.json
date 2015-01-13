@@ -8,7 +8,7 @@
   "development": {
     "dependencies": {
       "nib-components/shims": "*",
-      "nib-styles/control": "~1.3.0"
+      "nib-styles/control": "~1.2.1"
     }
   }
 }
