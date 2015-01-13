@@ -14,17 +14,19 @@
 </head>
 <body>
 
-    <div class="control js-name-control">
-        <label class="control-label" for="first-name-input">First name</label>
+    <div class="control control--first-name-control js-first-name-control t-first-name-control">
 
-        <div class="control-input-wrapper">
-            <input type="text" class="control-input control-input--text js-input" id="first-name-input" autofocus/>
-            <div class="control-feedback-icon no-select js-feedback-icon"></div>
+        <label class="control__label" for="first-name-input">First name</label>
+
+        <div class="control__input">
+            <input class="js-input control-input-text" id="first-name-input" autofocus/>
+            <i class="js-feedback-icon no-select control-feedback-icon--inside control-feedback-icon"></i>
         </div>
 
-        <div class="control-feedback-message no-select js-feedback-container">
-            <p class="control-feedback-message__text js-feedback-message"></p>
+        <div class="control-feedback-message no-select js-feedback-container" style="height: 0px;">
+            <p class="control-feedback-message__text js-feedback-message t-feedback-message"></p>
         </div>
+
     </div>
 
     <button onclick="nameControl.controlView.setLoading(!nameControl.controlView.isLoading());">Toggle Loading</button>
@@ -37,7 +39,7 @@
         Control.ControlView     = require('control-view');
 
         var nameControl = Control.create({
-            el:             document.querySelector('.js-name-control'),
+            el:             document.querySelector('.js-first-name-control'),
             validators:     [[function(val) { return val != ''}, 'Your name is required so we can contact you.']]
         });
 

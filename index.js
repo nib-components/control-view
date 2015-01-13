@@ -12,7 +12,7 @@ ControlView.prototype.init = function() {
     this.tip = new Tip();
     this.tip
       .prependTo(this.feedbackContainer || this.feedbackMessage)
-      .positionAt(this.feedbackTarget, 'bottom')
+      .positionAt(this.feedbackTarget, 'h-center')
     ;
   }
 
