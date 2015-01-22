@@ -3,7 +3,7 @@
   "scripts": ["index.js"],
   "dependencies": {
     "nib-health-funds/tip": "~0.1.4",
-    "nib-health-funds/control": "~2.1.1"
+    "nib-health-funds/control": "~2.2.1"
   },
   "development": {
     "dependencies": {
